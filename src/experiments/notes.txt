@@ -1,0 +1,200 @@
+TOP 10 PERFORMERS:
+
+############# Starting mesonet_imp_v3_6 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  flip_blur_cj
+Learning rate: 0.001
+Optimizer:  rmsprop
+Epochs:  24
+Batch size:  32
+Highest val accuracy:  0.9998694658279419 on epoch:  24
+############# mesonet_imp_v3_6 done ####################
+
+(stable training)
+
+
+############# Starting mesonet_imp_v2_7 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  all_transforms
+Learning rate: 0.001
+Optimizer:  adamw
+Epochs:  29
+Batch size:  32
+Highest val accuracy:  0.9994779229164124 on epoch:  22
+############# mesonet_imp_v2_7 done ####################
+
+(unstable training)
+
+############# Starting mesonet_imp_v3_7 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  basic_transform
+Learning rate: 0.001
+Optimizer:  adamw
+Epochs:  13
+Batch size:  32
+Highest val accuracy:  0.999347448348999 on epoch:  11
+############# mesonet_imp_v3_7 done ####################
+
+(unstable beginning, then stable)
+
+############# Starting mesonet_imp_v2_9 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.001
+Optimizer:  adamw
+Epochs:  23
+Batch size:  32
+Highest val accuracy:  0.9992169141769409 on epoch:  18
+############# mesonet_imp_v2_9 done ####################
+
+(unstable)
+
+############# Starting mesonet_imp_v3_1 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.007
+Optimizer:  adam
+Epochs:  12
+Batch size:  32
+Highest val accuracy:  0.9990863800048828 on epoch:  11
+############# mesonet_imp_v3_1 done ####################
+
+(unstable beginning, then stable)
+
+
+############# Starting xception_8 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.014
+Optimizer:  adamw
+Epochs:  4
+Batch size:  32
+Highest val accuracy:  0.9990211725234985 on epoch:  4
+############# xception_8 done ####################
+
+(stable)
+
+
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  flip_blur_cj
+Learning rate: 0.005
+Optimizer:  rmsprop
+Epochs:  3
+Batch size:  16
+Highest val accuracy:  0.9986948370933533 on epoch:  3
+############# efficient_b4_7 done ####################
+
+(stable)
+
+
+############# Starting xception_6 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  basic_transform
+Learning rate: 0.007
+Optimizer:  rmsprop
+Epochs:  3
+Batch size:  32
+Highest val accuracy:  0.9983032941818237 on epoch:  3
+############# xception_6 done ####################
+
+(stable)
+
+############# Starting mesonet_imp_v3_1 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.007
+Optimizer:  adam
+Epochs:  12
+Batch size:  32
+Highest val accuracy:  0.9990863800048828 on epoch:  11
+############# mesonet_imp_v3_1 done ####################
+
+(unstable beginning, then stable)
+
+BOTTOM 5 PERFORMERS:
+
+
+############# Starting baseleline_cnn_lab4_fm_2 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  basic_transform
+Learning rate: 0.011
+Optimizer:  rmsprop
+Epochs:  7
+Batch size:  32
+Highest val accuracy:  0.5482249855995178 on epoch:  1
+############# baseleline_cnn_lab4_fm_2 done ####################
+
+(no learning happening)
+
+
+############# Starting vision_trans_2 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.008
+Optimizer:  adamw
+Epochs:  1
+Batch size:  32
+Highest val accuracy:  0.5499869585037231 on epoch:  1
+############# vision_trans_2 done ####################
+
+############# Starting vision_trans_2 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  random_erasing
+Learning rate: 0.008
+Optimizer:  adamw
+Epochs:  1
+Batch size:  32
+Highest val accuracy:  0.5499869585037231 on epoch:  1
+############# vision_trans_2 done ####################
+
+############# Starting mesonet_imp_6 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  all_transforms
+Learning rate: 0.006
+Optimizer:  adadelta
+Epochs:  13
+Batch size:  32
+Highest val accuracy:  0.9517750144004822 on epoch:  12
+############# mesonet_imp_6 done ####################
+
+(stable but loss starts increasing towards the end)
+
+
+############# Starting mesonet_imp_v2_8 ####################
+Using device: cuda
+----------HYPERPARAMETERS----------
+:::::OVERVIEW:::::
+Transformation:  basic_transform
+Learning rate: 0.001
+Optimizer:  adadelta
+Epochs:  19
+Batch size:  32
+Highest val accuracy:  0.9574523568153381 on epoch:  19
+############# mesonet_imp_v2_8 done ####################
+
+(very stable)

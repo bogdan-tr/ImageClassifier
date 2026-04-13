@@ -1,0 +1,38 @@
++CSCI_GrpDesktop = True
+universe = vanilla
+executable = /bin/bash
+arguments = rs_efficient_b4_h.sh 
+getenv = True
+Requirements = HasLocal581 == True
+
+# Where Condokr writes stdout/stderr/log
+output       = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4/rs_efficient_b4.out
+log          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4/rs_efficient_b4.log
+error          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4/rs_efficient_b4.err
+
+# resource requests
+
+request_GPUs       = 1
+gpus_minimum_memory = 8GB
+request_cpus    = cpus 
+request_memory  = 16GB 
+request_disk    = 16GB
+
+# file transfer
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+# transfer_output_files = efficient_b4_1.txt,efficient_b4_2.txt,efficient_b4_3.txt,efficient_b4_4.txt,efficient_b4_5.txt,efficient_b4_6.txt,efficient_b4_7.txt,efficient_b4_8.txt,efficient_b4_9.txt,efficient_b4_10.txt
+
+transfer_input_files = \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/efficient_b4.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/experiments, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/helper_loads, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/main.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/jobs/rs_efficient_b4/rs_efficient_b4_h.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/caller_bash_scripts/rs_efficient_b4.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/venv_package/torch_venv2.tar.gz, 
+
+
+# queue 
+queue 1

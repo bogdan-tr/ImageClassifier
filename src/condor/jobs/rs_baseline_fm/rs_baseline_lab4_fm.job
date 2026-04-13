@@ -1,0 +1,38 @@
++CSCI_GrpDesktop = True
+universe = vanilla
+executable = /bin/bash
+arguments = rs_baseline.sh
+getenv = True
+Requirements = HasLocal581 == True
+
+# Where Condokr writes stdout/stderr/log
+output       = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_baseline/rs_baseline.out
+log          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_baseline/rs_baseline.log
+error          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_baseline/rs_baseline.err
+
+# resource requests
+
+request_GPUs       = 1
+gpus_minimum_memory = 8GB
+request_cpus    = cpus 
+request_memory  = 16GB 
+request_disk    = 16GB
+
+# file transfer
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+# transfer_output_files = baseline_cnn_lab4_fm_1.txt,baseline_cnn_lab4_fm_2.txt,baseline_cnn_lab4_fm_3.txt,baseline_cnn_lab4_fm_4.txt,baseline_cnn_lab4_fm_5.txt,baseline_cnn_lab4_fm_6.txt,baseline_cnn_lab4_fm_7.txt,baseline_cnn_lab4_fm_8.txt,baseline_cnn_lab4_fm_9.txt,baseline_cnn_lab4_fm_10.txt
+
+transfer_input_files = \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/baseline_cnn_lab4_frequent_metrics.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/experiments, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/helper_loads, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/main.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/jobs/rs_baseline_fm/rs_baseline.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/caller_bash_scripts/rs_baseline_lab4_fm.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/venv_package/torch_venv2.tar.gz, 
+
+
+# queue 
+queue 1

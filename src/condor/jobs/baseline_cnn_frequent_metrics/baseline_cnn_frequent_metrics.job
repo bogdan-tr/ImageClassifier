@@ -1,0 +1,38 @@
++CSCI_GrpDesktop = True
+universe = vanilla
+executable = /bin/bash
+arguments = baseline_cnn_frequent_metrics.sh
+getenv = True
+Requirements = HasLocal581 == True
+
+# Where Condokr writes stdout/stderr/log
+output       = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/baseline_cnn_frequent_metrics/baseline_cnn_lab4_frequent_metrics.out
+log          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/baseline_cnn_frequent_metrics/baseline_cnn_lab4_frequent_metrics.log
+error          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/baseline_cnn_frequent_metrics/baseline_cnn_lab4_frequent_metrics.err
+
+# resource requests
+
+request_GPUs       = 1
+gpus_minimum_memory = 8GB
+request_cpus    = cpus
+request_memory  = 16GB 
+request_disk    = 16GB
+
+# file transfer
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT
+transfer_output_files = baseline_cnn_lab4_frequent_metrics.pth
+
+# /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main 
+transfer_input_files = \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/baseline_cnn_lab4_frequent_metrics.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/experiments, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/helper_loads, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/main.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/jobs/baseline_cnn_frequent_metrics/baseline_cnn_frequent_metrics.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/venv_package/torch_venv2.tar.gz, \
+
+
+# queue 
+queue 1

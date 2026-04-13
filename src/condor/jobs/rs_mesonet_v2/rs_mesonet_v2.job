@@ -1,0 +1,38 @@
++CSCI_GrpDesktop = True
+universe = vanilla
+executable = /bin/bash
+arguments = rs_mesonet_v2_h.sh 
+getenv = True
+Requirements = HasLocal581 == True
+
+# Where Condokr writes stdout/stderr/log
+output       = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_mesonet_v2/rs_mesonet_v2.out
+log          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_mesonet_v2/rs_mesonet_v2.log
+error          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_mesonet_v2/rs_mesonet_v2.err
+
+# resource requests
+
+request_GPUs       = 1
+gpus_minimum_memory = 8GB
+request_cpus    = cpus 
+request_memory  = 16GB 
+request_disk    = 16GB
+
+# file transfer
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+# transfer_output_files = mesonet_v2_imp_1.txt,mesonet_v2_imp_2.txt,mesonet_v2_imp_3.txt,mesonet_v2_imp_4.txt,mesonet_v2_imp_5.txt,mesonet_v2_imp_6.txt,mesonet_v2_imp_7.txt,mesonet_v2_imp_8.txt,mesonet_v2_imp_9.txt,mesonet_v2_imp_10.txt
+
+transfer_input_files = \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/mesonet_imp_v2.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/experiments, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/helper_loads, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/main.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/jobs/rs_mesonet_v2/rs_mesonet_v2_h.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/caller_bash_scripts/rs_mesonet_v2.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/venv_package/torch_venv2.tar.gz, 
+
+
+# queue 
+queue 1

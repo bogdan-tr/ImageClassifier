@@ -1,0 +1,38 @@
++CSCI_GrpDesktop = True
+universe = vanilla
+executable = /bin/bash
+arguments = rs_efficient_b4_pt_h.sh 
+getenv = True
+Requirements = HasLocal581 == True
+
+# Where Condokr writes stdout/stderr/log
+output       = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4_pt/rs_efficient_b4_pt.out
+log          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4_pt/rs_efficient_b4_pt.log
+error          = /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/outputs/rs_efficient_b4_pt/rs_efficient_b4_pt.err
+
+# resource requests
+
+request_GPUs       = 1
+gpus_minimum_memory = 8GB
+request_cpus    = cpus 
+request_memory  = 16GB 
+request_disk    = 16GB
+
+# file transfer
+
+should_transfer_files = YES
+when_to_transfer_output = ON_EXIT_OR_EVICT
+# transfer_output_files = efficient_b4_pre_trained_1.txt,efficient_b4_pre_trained_2.txt,efficient_b4_pre_trained_3.txt,efficient_b4_pre_trained_4.txt,efficient_b4_pre_trained_5.txt,efficient_b4_pre_trained_6.txt,efficient_b4_pre_trained_7.txt,efficient_b4_pre_trained_8.txt,efficient_b4_pre_trained_9.txt,efficient_b4_pre_trained_10.txt
+
+transfer_input_files = \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/efficient_b4_pre_trained.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/experiments, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/src/helper_loads, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/main.py, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/jobs/rs_efficient_b4_pt/rs_efficient_b4_pt_h.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/main/caller_bash_scripts/rs_efficient_b4_pre_trained.sh, \
+  /home/username/MAIN/dev/CS481/final_project/202610_csci581_project_gel_han_tri/code/task4/condor/venv_package/torch_venv2.tar.gz, 
+
+
+# queue 
+queue 1

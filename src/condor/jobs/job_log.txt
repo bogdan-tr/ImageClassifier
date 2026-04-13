@@ -1,0 +1,26 @@
+This file was used to manually keep track of experiments run as condor jobs
+
+9305 rs_xception (2:47) - removed (4:00 (too long))
+9306 vision_trans (2:47) - crashed 3:50
+9324 baseline_cnn (3:51) - SUCCESS! - DONE
+9372 mesonet (4:00) - SUCCESS! -DONE
+9373 vision_trans (7:18) -crashed (need to fix dims) (fixed)
+9374 rs_xception (9:18) - SUCCESS! (3 total, 2 epochs)
+9502 vision_trans (8:33am) - SUCCESS (7/10)
+9436 rs_efficient_b0 (8:35am) - SUCCESS! (5 total few epochs)
+9501 rs_efficient_b4 (10am) -??? idk where it went (4/10)
+9564 rs_xception (8:45) -CRASHING (investigate)
+9561 rs_efficient_b0 (8:45) - SUCCESS!
+9576 rs_efficient_b4 (9:20) - SUCCESS!
+9665 rs_efficient_b0 (9:00am) - SUCCESS!
+9692 rs_xception (9:00am) - SUCCESS!
+9715 rs_efficient_b4_pt (12:30) -stopped (first half)
+9715 rs_efficient_b4_pt (12:30) -stopped (second half)
+9785 rs_mesonoet_v2 (3pm) - SUCCESS!
+9785 rs_mesonoet_v3 (3pm) - SUCCESS!
+9873 rs_mesonoet_v2 (9pm) - SUCCESS!
+9874 rs_mesonoet_v3 (9pm) - SUCCESS!
+9988 rs_mesonet_v3_final (9am) -r (1-3)
+9989 rs_mesonet_v3_final (9am) -r (4-6)
+
+

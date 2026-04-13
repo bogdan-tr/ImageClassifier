@@ -1,0 +1,10 @@
+/local/202610_csci581_project/project_data/task4/dev/real/00FM57MTGV.png
+/local/202610_csci581_project/project_data/task4/dev/real/00RY9XO61E.png
+/local/202610_csci581_project/project_data/task4/dev/real/00TUT309NW.png
+/local/202610_csci581_project/project_data/task4/dev/real/00WA639CR0.png
+/local/202610_csci581_project/project_data/task4/dev/real/01KP7HDOLF.png
+/local/202610_csci581_project/project_data/task4/dev/real/020MD9VV62.png
+/local/202610_csci581_project/project_data/task4/dev/real/0243JI0ANJ.png
+/local/202610_csci581_project/project_data/task4/dev/real/02FHM9E5V6.png
+/local/202610_csci581_project/project_data/task4/dev/real/02G20ODXIR.png
+/local/202610_csci581_project/project_data/task4/dev/real/02IVPBKYWQ.png

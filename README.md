@@ -2,7 +2,7 @@
 
 _Bogdan Trigubov_
 
-This repository contains the source code for CNN model implementations for fake and real image detection. Please look at the PDF file in root fore more reference.
+This repository contains the source code for CNN model implementations for fake and real image detection. Please look at the PDF file in root for project details.
 
 ## General Directory Structure
 
